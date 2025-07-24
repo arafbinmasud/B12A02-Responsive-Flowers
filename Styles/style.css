@@ -12,8 +12,11 @@ body {
 .primary-color {
   color: #e95a08;
 }
-
-
+.primary-description {
+  font-family: inter;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+}
 
 /* Header Section Styles  */
 .header {
@@ -55,16 +58,68 @@ body {
   font-size: 4.0625rem;
   margin-bottom: 13px;
 }
-.banner-left p {
-  font-family: inter;
-  font-size: 1.375rem;
-  color: rgba(0, 0, 0, 0.5);
-}
+
 .banner-right img {
   display: block;
 }
 
-
+/* Our Plants Section Styles  */
+.our-plants {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.our-plants-texts {
+  text-align: center;
+}
+.our-plants-texts h3 {
+  margin-bottom: 16px;
+  font-size: 3.125rem;
+  font-family: noto serif;
+}
+.our-plants-texts p {
+  max-width: 888px;
+  margin: 0 auto;
+}
+.our-plants-container {
+  margin-top: 49px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+.card {
+}
+.card img {
+  width: 100%;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: center;
+}
+.card-title {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+  color: #111111;
+}
+.card-price {
+  font-family: inter;
+  font-weight: bold;
+  font-size: 1.375rem;
+  color: #111111;
+  margin-bottom: 30px;
+}
+.card button {
+  font-family: inter;
+  font-weight: 600;
+  color: #fff;
+  background-color: #e95a08;
+  border: none;
+  padding: 19px 80px;
+}
 
 /* Small Device Styles  */
 @media screen and (max-width: 576px) {
@@ -72,8 +127,8 @@ body {
   .header {
     margin: 0px;
   }
-  .navbar{
-    margin: 10px;
+  .navbar {
+    margin: 10px 16px 0;
   }
   .brand-logo img {
     width: 63px;
@@ -89,20 +144,40 @@ body {
   /* Banner Styles  */
   .banner {
     flex-direction: column-reverse;
-    
   }
-  .banner-right img{
+  .banner-right img {
     width: 100%;
     margin: 28px 0;
   }
-  .banner-left{
+  .banner-left {
     margin: 0 16px;
   }
-  .banner-left h1{
+  .banner-left h1,
+  .our-plants-texts h3 {
     font-size: 1.5rem;
   }
-  .banner-left p{
+  .banner-left p,
+  .our-plants-texts p {
     font-size: 0.875rem;
   }
-  
+
+  /* Our Plants Section Syles  */
+  .our-plants {
+    margin: 65px 10px 0;
+  }
+
+  .our-plants-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 28px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card-title,
+  .card-price {
+    font-size: 1rem;
+  }
+  .card button {
+    padding: 17px;
+  }
 }
