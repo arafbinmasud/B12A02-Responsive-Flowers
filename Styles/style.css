@@ -1,0 +1,63 @@
+/* Shared Styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header Section Styles  */
+.header {
+  max-width: 1140px;
+  margin: 30px 150px 120px;
+}
+
+/* Navbar Styles  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  gap: 48px;
+}
+.link-item {
+  list-style: none;
+  font-family: inter;
+}
+.link {
+  text-decoration: none;
+  color: #8987a1;
+  font-weight: bold;
+}
+.links .link-item:first-child a {
+  color: #252432;
+}
+
+
+
+/* Small Device Styles  */
+@media screen and (max-width: 576px){
+
+/* Navbar Styles  */
+.header{
+    margin: 10px ;
+}
+.brand-logo img{
+    width: 63px;
+    height: 38px;
+   
+}
+.links{
+    gap: 0;
+}
+.link{
+    display: none;
+}
+
+}
