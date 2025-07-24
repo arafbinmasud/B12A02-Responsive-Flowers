@@ -17,6 +17,10 @@ body {
   font-size: 1.375rem;
   color: rgba(0, 0, 0, 0.5);
 }
+.section-title {
+  font-family: noto serif;
+  font-size: 3.125rem;
+}
 
 /* Header Section Styles  */
 .header {
@@ -73,8 +77,6 @@ body {
 }
 .our-plants-texts h3 {
   margin-bottom: 16px;
-  font-size: 3.125rem;
-  font-family: noto serif;
 }
 .our-plants-texts p {
   max-width: 888px;
@@ -128,11 +130,6 @@ body {
   gap: 90px;
   position: relative;
 }
-
-.col-right h3 {
-  font-family: noto serif;
-  font-size: 3.125rem;
-}
 .col-right li {
   margin-left: 30px;
   margin-top: 20px;
@@ -148,18 +145,93 @@ body {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Latest Deal Section Styles */
+.latest-deal {
+  max-width: 1140px;
+  margin: 134px auto 120px;
+}
+.latest-deal-texts {
+  text-align: center;
+  margin-bottom: 120px;
+}
+.latest-deal-texts h3 {
+  margin-bottom: 16px;
+}
+.latest-deal-texts p {
+  max-width: 888px;
+  margin: 0 auto;
+}
+.latest-deal-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 423px;
+  column-gap: 28px;
+}
+.latest-deal-container .col-left {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 25px;
+}
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/deal-ana.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.latest-deal-container .col-left p {
+  font-family: noto serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+.latest-deal-container .col-left button {
+  font-family: inter;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+.latest-deal-container .col-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.latest-deal-container .col-right p {
+  font-family: noto serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
+}
+.latest-deal-container .col-right .btn{
+  font-family: inter;
+  font-weight: 600;
+  font-size: 1.75rem;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
 
 
 
@@ -203,12 +275,14 @@ body {
   }
   .banner-left h1,
   .our-plants-texts h3,
-  .col-right h3 {
+  .col-right h3,
+  .latest-deal-texts h3 {
     font-size: 1.5rem;
   }
   .banner-left p,
   .our-plants-texts p,
-  .col-right li{
+  .col-right li,
+  .latest-deal-texts p {
     font-size: 0.875rem;
   }
 
@@ -241,11 +315,33 @@ body {
   .col-left img {
     width: 100%;
   }
-  .col-right li{
+  .col-right li {
     margin-left: 18px;
   }
-  .badge{
+  .badge {
     display: none;
+  }
+
+  /* Latest Deal Section Styles  */
+  .latest-deal-texts {
+    margin: 0 28px 50px;
+  }
+  .latest-deal-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 16px;
+  }
+  .latest-deal-container .col-right{
+    min-height: 199px;
+  } 
+  .latest-deal-container .col-right p {
+    font-family: noto serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  .latest-deal-container .col-right .btn {
+    font-size: 1rem;
   }
 
 }
