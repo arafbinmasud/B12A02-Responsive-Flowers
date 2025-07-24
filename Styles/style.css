@@ -87,8 +87,6 @@ body {
   row-gap: 30px;
   column-gap: 20px;
 }
-.card {
-}
 .card img {
   width: 100%;
 }
@@ -120,6 +118,57 @@ body {
   border: none;
   padding: 19px 80px;
 }
+
+/* Trusted Seller Section Styles */
+.trusted-seller {
+  max-width: 1140px;
+  margin: 210px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  position: relative;
+}
+
+.col-right h3 {
+  font-family: noto serif;
+  font-size: 3.125rem;
+}
+.col-right li {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.badge {
+  position: absolute;
+  top: -125px;
+  left: 350px;
+  max-width: 286px;
+  max-height: 286px;
+}
+.badge img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Small Device Styles  */
 @media screen and (max-width: 576px) {
@@ -153,11 +202,13 @@ body {
     margin: 0 16px;
   }
   .banner-left h1,
-  .our-plants-texts h3 {
+  .our-plants-texts h3,
+  .col-right h3 {
     font-size: 1.5rem;
   }
   .banner-left p,
-  .our-plants-texts p {
+  .our-plants-texts p,
+  .col-right li{
     font-size: 0.875rem;
   }
 
@@ -180,4 +231,21 @@ body {
   .card button {
     padding: 17px;
   }
+
+  /* Trusted Seller Section Styles */
+  .trusted-seller {
+    flex-direction: column;
+    margin: 50px 16px 0;
+    gap: 18px;
+  }
+  .col-left img {
+    width: 100%;
+  }
+  .col-right li{
+    margin-left: 18px;
+  }
+  .badge{
+    display: none;
+  }
+
 }
