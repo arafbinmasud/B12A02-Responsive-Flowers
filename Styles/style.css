@@ -9,6 +9,11 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+.primary-color {
+  color: #e95a08;
+}
+
+
 
 /* Header Section Styles  */
 .header {
@@ -21,6 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 120px;
 }
 .links {
   display: flex;
@@ -39,25 +45,64 @@ body {
   color: #252432;
 }
 
+/* Banner Styles */
+.banner {
+  display: flex;
+  align-items: end;
+}
+.banner-left h1 {
+  font-family: noto serif;
+  font-size: 4.0625rem;
+  margin-bottom: 13px;
+}
+.banner-left p {
+  font-family: inter;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.banner-right img {
+  display: block;
+}
+
 
 
 /* Small Device Styles  */
-@media screen and (max-width: 576px){
-
-/* Navbar Styles  */
-.header{
-    margin: 10px ;
-}
-.brand-logo img{
+@media screen and (max-width: 576px) {
+  /* Navbar Styles  */
+  .header {
+    margin: 0px;
+  }
+  .navbar{
+    margin: 10px;
+  }
+  .brand-logo img {
     width: 63px;
     height: 38px;
-   
-}
-.links{
+  }
+  .links {
     gap: 0;
-}
-.link{
+  }
+  .link {
     display: none;
-}
+  }
 
+  /* Banner Styles  */
+  .banner {
+    flex-direction: column-reverse;
+    
+  }
+  .banner-right img{
+    width: 100%;
+    margin: 28px 0;
+  }
+  .banner-left{
+    margin: 0 16px;
+  }
+  .banner-left h1{
+    font-size: 1.5rem;
+  }
+  .banner-left p{
+    font-size: 0.875rem;
+  }
+  
 }
