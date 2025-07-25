@@ -147,8 +147,17 @@ body {
   max-width: 286px;
   max-height: 286px;
 }
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .badge img {
   width: 100%;
+  animation: spin 4s infinite linear;
 }
 
 /* Latest Deal Section Styles */

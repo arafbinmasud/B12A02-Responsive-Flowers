@@ -81,7 +81,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="card">
@@ -89,7 +89,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="card">
@@ -97,7 +97,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="card">
@@ -105,7 +105,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="card">
@@ -113,7 +113,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="card">
@@ -121,7 +121,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="card">
@@ -129,7 +129,7 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="card">
@@ -137,11 +137,12 @@
                     <div class="card-content">
                         <h4 class="card-title">Lily Blossom</h4>
                         <p class="card-price">20 USD</p>
-                        <button>ADD TO CART</button>
+                        <button onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
 
             </div>
+
         </section>
 
         <!-- Trusted Seller Section  -->
@@ -200,16 +201,15 @@
         </section>
 
         <!-- Join Section  -->
-         <section class="join">
+        <section class="join">
             <div>
                 <h3 class="section-title">Join the colorful Bunch</h3>
             </div>
             <div class="input-field">
-                <input type="email" name="" id="" placeholder="Write email">
+                <input type="email" name="email" id="email" placeholder="Write email">
                 <button type="submit">Subscribe</button>
             </div>
-         </section>
-
+        </section>
 
     </main>
 
@@ -217,7 +217,8 @@
     <footer class="footer">
         <div class="col-1">
             <img src="./assets/logo.png" alt="">
-            <p class="primary-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+            <p class="primary-description">Indulge your senses with the beauty and fragrance of our fresh flower shop.
+            </p>
         </div>
         <div class="col-2">
             <ul>
@@ -238,11 +239,20 @@
             </ul>
         </div>
         <div class="col-4">
-            <img src="./assets/icon-linkedin.png" alt="">
-             <img src="./assets/icon-twitter.png" alt="">
-            <img src="./assets/icon-facebook.png" alt="">
-            <img src="./assets/icon-youtube.png" alt="">
+            <img src="./assets/icon-linkedin.png" alt="linkedin icon">
+            <img src="./assets/icon-twitter.png" alt="twitter icon">
+            <img src="./assets/icon-facebook.png" alt="facebook icon">
+            <img src="./assets/icon-youtube.png" alt="youtube icon">
+        </div>
     </footer>
+
+    <!-- Script Section  -->
+
+    <script>
+        function addToCart() {
+            alert("Flower Added to Cart");
+        }
+    </script>
 </body>
 
 </html>
